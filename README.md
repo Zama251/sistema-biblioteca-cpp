@@ -1,1 +1,3 @@
-C:\Users\nanda\sistema-biblioteca-cpp>
+Sistema Biblioteca em C++
+
+Projeto em desenvolvimento.
