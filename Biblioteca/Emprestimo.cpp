@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main (){
+int main () {
     class Livro {
 private:
     int id;
@@ -31,6 +31,20 @@ public:
         return titulo;
     }
 };
+class Usuario {
+private:
+    int id;
+    string nome;
 
-    
+public:
+    Usuario(int id, string nome) {
+        this->id = id;
+        this->nome = nome;
+    }
+
+    string getNome() {
+        return nome;
+    }
+};
+
 }
