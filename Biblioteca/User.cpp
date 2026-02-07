@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int main (){
-
-    
-}
+struct User{
+    string Nome; 
+    int CPF;
+    string Login; //public (Email)
+    int Senha; //protected? ou private
+    bool Status; //(Do emprestimo) (Se tem ou não livro emprestado?) + tempo restante?
+};
