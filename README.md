@@ -53,6 +53,11 @@ Quantidades de emprestimo:
 
 
 Emprestimo:
+LivroF:
+LivroD:
+
+
+
 
 Biblioteca:
 
