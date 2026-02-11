@@ -7,13 +7,41 @@ class User{ //se fosse struct tudo seria publico por padrão, ou seja, a senha e
    private: 
    
    string senha; //senha do usuario!! a senha como int é insegura e limitada, com string voce pode adicionar simbolos, tipos de letra e tamanho.
-   string cpf; // o cpf como int não daria certo por conta que ele tem 11 digitos e estoura o maximo do int.
+   string cpf;
 
    public: 
    
    string login; //Email do usuario.
-   string nome;
+   string nome; 
 
-bool temEmprestimo; //o bool so serve pra true/false ele não pode gaurdar o tempo restante, se queremos usar ele tem que ser dessa forma.
-bool diasRestantes;
+   bool TE; //Tem Emprestimo //o bool so serve pra true/false ele não pode gaurdar o tempo restante, se queremos usar ele tem que ser dessa forma.
+   int DR; // Dias Restantes
+
+   User(string nome, string login, string cpf, string senha) {
+   
+      this -> nome = nome;
+      this -> login = login; a
+      this -> cpf = cpf;
+      this -> senha = senha;
+
+      TE = false;
+      DR = 0;
+
+   }
+
+      bool VS (string tentativas); //Validador de senhas
+      bool VCPF (); //Validador de CPF
+      void FE (int D); // FazerEmprestimos | Dias
+      void DL (); //Devolver Livros
+
+      
+
+
+
+
 };
+
+
+   
+
+
