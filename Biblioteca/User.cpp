@@ -20,7 +20,7 @@ class User{ //se fosse struct tudo seria publico por padrão, ou seja, a senha e
    User(string nome, string login, string cpf, string senha) {
    
       this -> nome = nome;
-      this -> login = login; a
+      this -> login = login; 
       this -> cpf = cpf;
       this -> senha = senha;
 
