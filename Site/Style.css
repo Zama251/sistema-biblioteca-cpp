@@ -101,3 +101,100 @@ nav ul li a:hover {
 .search-box button:hover {
     background-color: #155ec0;
 }
+/*carrosel*/ 
+.carousel-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.carousel-section h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.carousel button {
+    z-index: 10;
+}
+.prev,
+.next {
+    display: block;
+}
+.ver-todas-container {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.ver-todas-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #1e73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ver-todas-btn:hover {
+    background-color: #155ec0;
+    transform: scale(1.05);
+}
+.banner {
+    position: relative;
+    background: url("https://picsum.photos/1920/1080?night") no-repeat center center/cover;
+    padding-bottom: 80px;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75); /* MAIS ESCURO */
+}
+
+.banner * {
+    position: relative;
+    z-index: 1;
+}
